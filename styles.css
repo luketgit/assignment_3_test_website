@@ -1,0 +1,153 @@
+:root {
+	--highlight-green: #9cff4c;
+	--dark-green:  #8ce246;
+	--element-bg: #ebebeb;
+	--element-hover: #ccc;
+}
+
+body {
+	margin:  0;
+	font-family: "Roboto", sans-serif;
+}
+
+header {
+	background-color: var(--highlight-green);
+	border-width: 0px;
+	width: 100%;
+	display: flex;
+}
+
+img.logo {
+	padding:  5px 5px 5px 15px;
+	width: 128px;
+	height:  128px;
+}
+
+header h1 {
+	padding:  5px 5px 5px 30px;
+	font-family: "Staatliches";
+	font-size: 52px;
+}
+
+nav {
+	background-color: #8ce246;
+	font-size:24px;
+}
+
+nav ul {
+	width:  100%;
+	display:  inline-flex;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+nav ul.page-selected {
+	font-family: "Roboto", sans-serif;
+	font-weight: 700;
+	font-style: bold;
+}
+
+nav li {
+	width: 100%;
+	align-content: center;
+	justify-content: center;
+}
+
+nav a {
+	display:  block;
+	padding: 20px;
+	text-align: center;
+	color: black;
+	text-decoration: none;
+}
+
+section.side-by-side {
+	display: flex;
+	flex-direction: row;
+	padding:  50px;
+	justify-content:  center;
+}
+
+div.img-and-text {
+	margin: 20px;
+	padding: 0;
+	display: flex;
+	flex-direction: row;
+}
+
+img.side-image {
+	max-width: 145px;
+	height: 300px;
+}
+
+div.text-box-generic {
+	background-color: var(--element-bg);
+	padding: 30px;
+	max-width: 500px;
+}
+
+h2 {
+	text-align: center;
+}
+
+section.grid-container {
+	width:  100%;
+	justify-content: center;
+	align-content:  center;
+	display:  flex;
+}
+
+.grid{
+	display: inline-grid;
+	grid-template-columns: auto auto auto auto auto auto;
+	grid-gap:  50px;
+	padding:  50px;
+
+}
+
+.grid-img{
+	height: 200px;
+	width: 200px;
+
+}
+
+.gear-container {
+	display: flex;
+	flex-direction: column;
+	justify-content:  center;
+	align-content:  center;
+	padding:  50px;
+
+}
+
+/* Based off W3 Schools accordion tutorial*/
+
+.accordion {
+  background-color: var(--element-bg);
+  cursor: pointer;
+  padding: 18px;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+  width: 1450px;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: Roboto;
+}
+
+.active, .accordion:hover {
+  background-color: var(--element-hover);
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  width: 1450px;
+  margin-left: auto;
+  margin-right: auto;
+}
